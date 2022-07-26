@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #BFBFBF;
+}
+.main{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.circle{
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: red;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+#output{
+    pointer-events: none;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+}
+.odometer{
+    margin-left: 50%;
+}
+#box1{
+    width: 25vw;
+    height: 50vh;
+    float: left;
+    background-color: red;
+    display: none;
+}
+
