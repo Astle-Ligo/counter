@@ -1,41 +1,68 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #BFBFBF;
-}
-.main{
-    width: 100%;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
+    background-color: #ffffff;
 }
 .circle{
-    width: 30%;
+    width: 30vw;
     aspect-ratio: 1;
     border-radius: 50%;
     background: red;
-    position:absolute;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.odometer{
+    background-color: aqua;
+    width: 25vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.screen{
     display: flex;
     justify-content: center;
     align-items: center;
     float: left;
+    width: 100%;
 }
 #output{
     pointer-events: none;
     font-size: 2rem;
-    background-color: transparent;
+    background-color: white;
+    width: 15vw;
     border: none;
 }
-.odometer{
-    margin-left: 50%;
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
 }
-#box1{
+#history{
     width: 25vw;
-    height: 50vh;
+    aspect-ratio: 1;
     float: left;
     background-color: red;
     display: none;
+    float: left;
 }
-
+.part1{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

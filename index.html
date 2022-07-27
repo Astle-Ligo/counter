@@ -9,21 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main">
-        <h1>SKINNS</h1>
-        <div class="circle">
+    <div class="container-fluid">
+        <center><h1>SKINNS</h1></center>
+        <div class="part1">
+          <div class="circle">
             <div class="odometer" id="odometer">
-            <input type="text" name="" id="output" value="000">
-            <br>
-            <input type="button" value="+" id="btn" onclick="countplus()">
-            <input type="button" value="-" id="btn" onclick="countminus()">
-            <input type="button" value="Reset" id="btn" onclick="clr()">
-            <a href="#box1"><input type="button" value="History" id="histbtn" onclick="hist()"></a>
+                <div class="screen">
+                    <input type="text" id="output">
+                </div>
+                <div class="btn">
+                    <input type="button" value="+" id="btn" onclick="countplus()">
+                    <input type="button" value="-" id="btn" onclick="countminus()">
+                    <input type="button" value="Reset" id="btn" onclick="clr()">
+                    <a href="#history">
+                        <input type="button" value="History" id="histbtn" onclick="hist()">
+                    </a>
+                </div>
+            </div>
+          </div>  
         </div>
+        <div class="part2">
+            <div class="history" id="history">
+                <ul id="ulist"></ul>
+            </div>
         </div>
-    </div>
-    <div class="box" id="box1">
-        <ul id="box"></ul>
     </div>
     <script src="script.js"></script>   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

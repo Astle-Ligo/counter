@@ -1,8 +1,7 @@
 var val = document.getElementById("output").value
-var i = 0,j=0 , li;
-var his = document.createElement("h1")
+var i = 0,ulist;
 const arr = [] , arr2 = [] ;
-var box = document.getElementById("box1")
+var his = document.getElementById("history")
 var histbtn = document.getElementById("histbtn")
 function countplus(){
     document.getElementById("output").value=++val
@@ -15,30 +14,18 @@ function clr(){
     arr2.push(arr[i])
     document.getElementById("output").value=0
     val = 0
-    console.log(arr2[i])
-    i++;
-    
+        ulist = document.createElement("li")
+        ulist.innerHTML = arr2[i]
+        his.prepend(ulist)
+        console.log(ulist)
+    i++;  
 }
 function hist(){
-    if(box.style.display == "block"){
-        box.style.display="none"
+    if(his.style.display == "block"){
+        his.style.display="none"
+        
     }
     else{
-        if(i>4)
-    {
-     for(j=i-1;j>=i-5;j--){
-        li = document.createElement("li")
-        li.innerHTML = arr2[j]
-        box.appendChild(li)
-    }
-    }
-    else{
-        for(j=i-1;j>=0;j--){
-            li = document.createElement("li")
-            li.innerHTML = arr2[j]
-            box.appendChild(li)
-        }
-    }
-    box.style.display="block"
+        his.style.display="block"
     }    
-}
+}   
