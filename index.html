@@ -11,29 +11,30 @@
 <body>
     <div class="container-fluid">
         <center><h1>SKINNS</h1></center>
+    </div>
         <div class="part1">
-          <div class="circle">
-            <div class="odometer" id="odometer">
+            <div class="box">
                 <div class="screen">
-                    <input type="text" id="output">
+                    <input type="text" id="output" class="output" value="0">
                 </div>
-                <div class="btn">
-                    <input type="button" value="+" id="btn" onclick="countplus()">
-                    <input type="button" value="-" id="btn" onclick="countminus()">
-                    <input type="button" value="Reset" id="btn" onclick="clr()">
+                <div class="btnsop">
+                    <button id="btn" class="btnop" onclick="countplus()">+</button>
+                    <button id="btn" class="btnop" onclick="countminus()">-</button>
+                </div>
+                <div class="btnscmd">
+                    <button id="btn" class="btncmd" onclick="clr()">Reset</button>
                     <a href="#history">
-                        <input type="button" value="History" id="histbtn" onclick="hist()">
+                        <button id="btn" class="btncmd" onclick="hist()">History</button>
                     </a>
+                </div>    
                 </div>
             </div>
-          </div>  
-        </div>
+          </div> 
         <div class="part2">
             <div class="history" id="history">
                 <ul id="ulist"></ul>
             </div>
         </div>
-    </div>
     <script src="script.js"></script>   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

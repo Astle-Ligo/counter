@@ -1,68 +1,84 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color:#199494;
+    color: white;
 }
-.circle{
-    width: 30vw;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: red;
+.part1 {
+    width: 100%;
+    height: 100%;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8vh;
 }
-.odometer{
-    background-color: aqua;
-    width: 25vw;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    float: left;
+.box{
+    background-color: transparent;
+    width: 80vw;
+    height: 80vh;
+    border: solid black 0.3rem;
 }
 .screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.output{
+    padding-inline: 1rem;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    background-color:transparent;
+    color: white;
+    border: none;
+}
+.btnsop{
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
     float: left;
     width: 100%;
 }
-#output{
-    pointer-events: none;
+.btnscmd{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+}
+.btnop{
+    background-color: transparent;
+    margin-inline: 1rem;
+    width: 7rem;
+    height: 4rem;
+    border-radius: 7%;
     font-size: 2rem;
-    background-color: white;
-    width: 15vw;
-    border: none;
-}
-.btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
+    color: white;
+    border: solid;
 }
-#history{
-    width: 25vw;
-    aspect-ratio: 1;
-    float: left;
-    background-color: red;
-    display: none;
-    float: left;
-}
-.part1{
-    width: 50%;
-    height: 100%;
-    float: left;
+.btncmd{
+    background-color: transparent;
+    margin-inline: 1rem;
+    width: 7rem;
+    height: 4rem;
+    border-radius: 7%;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    border: solid;
 }
-.part2 {
-    width: 50%;
-    height: 100%;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a {
+    text-decoration: none;
 }
