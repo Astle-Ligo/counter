@@ -4,29 +4,42 @@ body{
     background-color:#199494;
     color: white;
 }
-.part1 {
+.heading{
+    margin-top: 0.7rem;
+    font-size: 3rem;
+}
+.part1 , .part2  {
     width: 100%;
     height: 100%;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8vh;
+    margin-block: 5vh;
 }
 .box{
     background-color: transparent;
-    width: 80vw;
-    height: 80vh;
+    width: 70vw;
+    height: 75vh;
     border: solid black 0.3rem;
 }
 .screen{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    width: 60%;
+    float: left;
+    padding-top: 15vh;
+}
+.buttons{
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding-top: 20vh;
 }
 .output{
-    padding-inline: 1rem;
+    padding: 0;
+    padding-left: 1.5rem;
     width: 100%;
     pointer-events: none;
     display: flex;
@@ -37,40 +50,22 @@ body{
     color: white;
     border: none;
 }
-.btnsop{
-    margin-top: 3vh;
+.btn{
+    width: 8rem;
+    height: 4rem;
+    padding: 0;
+}
+.btnsop , .btnscmd {
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     float: left;
     width: 100%;
 }
-.btnscmd{
-    margin-top: 3vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    width: 100%;
-}
-.btnop{
+.btnop ,.btncmd{
     background-color: transparent;
-    margin-inline: 1rem;
-    width: 7rem;
-    height: 4rem;
-    border-radius: 7%;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: solid;
-}
-.btncmd{
-    background-color: transparent;
-    margin-inline: 1rem;
-    width: 7rem;
-    height: 4rem;
+    margin-inline: 0.8rem;
     border-radius: 7%;
     font-size: 2rem;
     display: flex;
@@ -82,3 +77,63 @@ body{
 a {
     text-decoration: none;
 }
+.box2{
+    background-color: transparent;
+    width: 40vw;
+    height: 110vh;
+    border: solid black 0.3rem;
+    overflow: hidden;
+}
+.ulist{
+    display: inline;
+}
+li {
+    list-style: none;
+    font-size: 5rem;
+    padding-left: 5rem;
+}
+p{
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+li , p{
+    display:inline;
+    color: black;
+}
+#box2{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .screen{
+        width: 100%;
+        padding-top: 0vh;
+        height: 50%;
+    }
+    .output{
+        font-size: 5rem;
+    }
+    .buttons{
+        padding-top: 0vh;
+        width: 100%;
+        height: 50%;
+    }
+    .btncmd{
+        font-size: 1rem;
+        max-width: 5.5rem;
+    }
+    .btnop{
+        width: 5.5rem;
+    }
+    .box2{
+        width: 70vw;
+        height: 85vh; 
+    }
+    li{
+        font-size: 4rem;
+        padding-left: 1rem;
+    }
+    p{
+        font-size: 2rem;
+        padding-left: 1.2rem;
+    }
+  }

@@ -10,29 +10,33 @@
 </head>
 <body>
     <div class="container-fluid">
-        <center><h1>SKINNS</h1></center>
+        <center><h1 class="heading">SKINNS</h1></center>
     </div>
         <div class="part1">
             <div class="box">
                 <div class="screen">
                     <input type="text" id="output" class="output" value="0">
                 </div>
-                <div class="btnsop">
-                    <button id="btn" class="btnop" onclick="countplus()">+</button>
-                    <button id="btn" class="btnop" onclick="countminus()">-</button>
-                </div>
-                <div class="btnscmd">
-                    <button id="btn" class="btncmd" onclick="clr()">Reset</button>
-                    <a href="#history">
-                        <button id="btn" class="btncmd" onclick="hist()">History</button>
-                    </a>
+                <div class="buttons">
+                    <div class="btnsop">
+                        <button id="btn" class="btnop btn" onclick="countplus()">+</button>
+                        <button id="btn" class="btnop btn" onclick="countminus()">-</button>
+                    </div>
+                    <div class="btnscmd">
+                        <button id="btn" class="btncmd btn" onclick="clr()">Reset</button>
+                        <a href="#history">
+                            <button id="btn" class="btncmd btn" onclick="hist()">History</button>
+                        </a>
+                    </div>
                 </div>    
                 </div>
             </div>
-          </div> 
         <div class="part2">
-            <div class="history" id="history">
-                <ul id="ulist"></ul>
+            <div class="box2" id="box2">
+                <center><h1 class="heading">HISTORY</h1></center>
+                <div class="history" id="history">
+                    <ul id="ulist"></ul>
+                </div>
             </div>
         </div>
     <script src="script.js"></script>   
