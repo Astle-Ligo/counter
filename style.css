@@ -25,7 +25,7 @@ body{
 }
 .boxhelp{
     background-color: transparent;
-    width: 40vw;
+    width: 30vw;
     height: 25vh;
     border: solid white 0.3rem;
 }
@@ -144,10 +144,10 @@ li , p{
     }
     .boxhelp{
         width: 70vw;
-        height: 17vh;
+        height: 22vh;
     }
     pre{
-        font-size: 0.55rem;  
+        font-size: 0.8rem;  
     }
     li{
         font-size: 4rem;

@@ -65,12 +65,6 @@ document.body.addEventListener('keydown', function(event){
                 case "Enter":
                     clr()
                 break;
-                case "AudioVolumeUp":
-                    countplus()    
-                break;
-                case "AudioVolumeDown":
-                    countminus() 
-                break;
                 case "+":
                     countplus()    
                 break;
