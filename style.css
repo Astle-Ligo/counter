@@ -147,7 +147,8 @@ li , p{
         height: 22vh;
     }
     pre{
-        font-size: 0.8rem;  
+        font-size: 0.8rem;
+        font-weight: 600;  
     }
     li{
         font-size: 4rem;
