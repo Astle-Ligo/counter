@@ -53,3 +53,29 @@ function hist(){
         box2.style.display="block"
     }    
 }   
+document.body.addEventListener('keydown', function(event){
+            const key = event.key;
+            switch (key) {
+                case "ArrowUp":
+                    countplus()    
+                break;
+                case "ArrowDown":
+                    countminus() 
+                break;
+                case "Enter":
+                    clr()
+                break;
+                case "AudioVolumeUp":
+                    countplus()    
+                break;
+                case "AudioVolumeDown":
+                    countminus() 
+                break;
+                case "+":
+                    countplus()    
+                break;
+                case "-":
+                    countminus() 
+                break;
+            }
+        });
