@@ -144,11 +144,7 @@ li , p{
     }
     .boxhelp{
         width: 70vw;
-        height: 22vh;
-    }
-    pre{
-        font-size: 0.8rem;
-        font-weight: 600;  
+        max-height: 25vh;
     }
     li{
         font-size: 4rem;
