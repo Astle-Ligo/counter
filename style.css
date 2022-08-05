@@ -1,12 +1,16 @@
+@import url("https://use.typekit.net/lqf7nav.css");
 body{
     margin: 0;
     padding: 0;
-    background-color:#199494;
+    background: radial-gradient(circle, rgba(50,180,180,0.8463760504201681) 20%, rgba(20,140,140,0.9) 60%);
     color: white;
 }
 .heading{
     margin-top: 0.5rem;
     font-size: 3rem;
+    font-family: arvo, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .part1 , .part2 , .part3  {
     width: 100%;
@@ -109,6 +113,9 @@ li {
 p{
     font-size: 2rem;
     padding-left: 3rem;
+    font-family: arvo, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 li , p{
     display:inline;
@@ -151,7 +158,7 @@ li , p{
         padding-left: 1rem;
     }
     p{
-        font-size: 2rem;
+        font-size: 1rem;
         padding-left: 1.2rem;
     }
   }
